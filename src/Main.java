@@ -23,10 +23,11 @@ public class Main {
             System.out.println("Месяц " + counter + ", сумма накоплений равна " + bank + " рублей");
         }
     }
+
     public static void task2() {
         System.out.println("Задача 2");
         int i = 0;
-        while (i<10) {
+        while (i < 10) {
             i = i + 1;
             System.out.print(i + " ");
         }
@@ -36,24 +37,27 @@ public class Main {
         }
         System.out.println();
     }
+
     public static void task3() {
         System.out.println("Задача 3");
         double population = 12_000_000;
         double birthRate = 17 / population * 1000;
         double deathRate = 8 / population * 1000;
-        for (int i=1; i <= 10; i=i+1) {
+        for (int i = 1; i <= 10; i = i + 1) {
             population = population + birthRate - deathRate;
             System.out.println("Год " + i + ", численность населения составляет " + population);
         }
     }
+
     public static void task4() {
         System.out.println("Задача 4");
         double deposite = 15_000;
         int i = 1;
-        for (; deposite < 12_000_000; i= i+1) {
-           deposite = deposite + deposite/100*7;
-           System.out.println("Месяц " + i + " Накопления = " + deposite);
+        for (; deposite < 12_000_000; i = i + 1) {
+            deposite = deposite + deposite / 100 * 7;
+            if (i % 6 == 0) {
+                System.out.println("Месяц " + i + " Накопления = " + deposite);
+            }
+        }
     }
-    }
-    }
-
+}
