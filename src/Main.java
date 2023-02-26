@@ -47,16 +47,13 @@ public class Main {
         }
     }
     public static void task4() {
-        int salary = 65535;
-        int total = 0;
-        int i = 0;
-        for (; total < 1_000_000; i++) {
-            total = total + total/100;
-            total = total + salary;
-            if (i % 5 == 0) {
-                System.out.println("Месяц " + i + " Итого " + total);
-            }
-        }
-        System.out.println(total);
+        System.out.println("Задача 4");
+        double deposite = 15_000;
+        int i = 1;
+        for (; deposite < 12_000_000; i= i+1) {
+           deposite = deposite + deposite/100*7;
+           System.out.println("Месяц " + i + " Накопления = " + deposite);
     }
-}
+    }
+    }
+
