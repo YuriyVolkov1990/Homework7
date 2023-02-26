@@ -90,8 +90,6 @@ public class Main {
     }
 
     public static void task8() {
-
-
         System.out.println("Задача 8");
         int yearNow = 2023;
         int yearComet = 0;
