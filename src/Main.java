@@ -6,7 +6,7 @@ public class Main {
         task4();
         task5();
         task6();
-        //task7();
+        task7();
         //task8();
         //task9();
         //task10();
@@ -81,4 +81,13 @@ public class Main {
             }
         }
     }
-}
+    public static void task7() {
+        System.out.println("Задача 7");
+        int friday = 3;
+                for (; friday <= 31; friday=friday+7) {
+                System.out.println("Сегодня пятница, " + friday + "-е число. Необходимо подготовить отчет");
+            }
+            }
+
+    }
+
