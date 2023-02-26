@@ -7,9 +7,7 @@ public class Main {
         task5();
         task6();
         task7();
-        //task8();
-        //task9();
-        //task10();
+        task8();
     }
 
     public static void task1() {
@@ -55,9 +53,9 @@ public class Main {
         int i = 1;
         for (; deposite < 12_000_000; i = i + 1) {
             deposite = deposite + deposite / 100 * 7;
-                System.out.println("Месяц " + i + " Накопления = " + deposite);
-            }
+            System.out.println("Месяц " + i + " Накопления = " + deposite);
         }
+    }
 
     public static void task5() {
         System.out.println("Задача 5");
@@ -70,6 +68,7 @@ public class Main {
             }
         }
     }
+
     public static void task6() {
         System.out.println("Задача 6");
         double deposite = 15_000;
@@ -81,13 +80,24 @@ public class Main {
             }
         }
     }
+
     public static void task7() {
         System.out.println("Задача 7");
         int friday = 3;
-                for (; friday <= 31; friday=friday+7) {
-                System.out.println("Сегодня пятница, " + friday + "-е число. Необходимо подготовить отчет");
-            }
-            }
-
+        for (; friday <= 31; friday = friday + 7) {
+            System.out.println("Сегодня пятница, " + friday + "-е число. Необходимо подготовить отчет");
+        }
     }
+
+    public static void task8() {
+        System.out.println("Задача 8");
+        int yearNow = 2023;
+        int yearComet = 0;
+        for (; yearComet <= yearNow + 100; yearComet = yearComet + 79) {
+            if (yearComet >= yearNow - 200) {
+                System.out.println(yearComet);
+            }
+        }
+    }
+}
 
